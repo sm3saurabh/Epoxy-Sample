@@ -1,7 +1,6 @@
 package com.epoxysample.epoxy.view
 
 import android.content.Context
-import android.graphics.Canvas
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.FrameLayout

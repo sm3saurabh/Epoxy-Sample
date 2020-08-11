@@ -8,7 +8,6 @@ import com.epoxysample.domains.Elf
 import com.epoxysample.domains.Neanderthal
 import com.epoxysample.epoxy.models.NeanderthalEpoxyModel_
 import com.epoxysample.epoxy.view.CustomDwarfViewModel_
-import java.util.*
 
 class SampleController(var data: Domain): EpoxyController() {
 

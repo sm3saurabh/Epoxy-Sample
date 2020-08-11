@@ -1,6 +1,5 @@
 package com.epoxysample.epoxy
 
-import com.airbnb.epoxy.Typed2EpoxyController
 import com.airbnb.epoxy.TypedEpoxyController
 import com.epoxysample.domains.Domain
 import com.epoxysample.domains.Dwarf
@@ -10,10 +9,10 @@ import com.epoxysample.epoxy.models.neanderthal
 import com.epoxysample.epoxy.view.customDwarfView
 import com.epoxysample.layoutElfModel
 
-class SampleTypedEpoxyController : Typed2EpoxyController<Domain, String>() {
+class SampleTypedEpoxyController : TypedEpoxyController<Domain>() {
 
 
-    override fun buildModels(data: Domain?, string: String) {
+    override fun buildModels(data: Domain?) {
         data?.let {
             buildItems(it)
         }

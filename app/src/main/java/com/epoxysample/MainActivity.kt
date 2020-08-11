@@ -1,16 +1,9 @@
 package com.epoxysample
 
 import android.os.Bundle
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
-import android.view.Menu
-import android.view.MenuItem
-import android.widget.LinearLayout
 import androidx.databinding.DataBindingUtil
-import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.airbnb.epoxy.EpoxyController
 import com.epoxysample.databinding.ActivityMainBinding
 import com.epoxysample.domains.createDomain
 import com.epoxysample.epoxy.SampleController
