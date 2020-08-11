@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">EpoxySample</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="image_of_neanderthal">Image of neanderthal</string>
+    <string name="neanderthal_name">Hello, I am a neanderthal of name %1$s</string>
+    <string name="elf_name">Hello, I am an elf of name %1$s</string>
+    <string name="dwarf_name">Hello, I am a dwarf of name %1$s</string>
+    <string name="age">I am %1$d years old</string>
+    <string name="bmi">My bmi is %1$.2f</string>
+    <string name="image_of_dwarf">Image of dwarf</string>
+    <string name="image_of_elf">Image of elf</string>
+</resources>

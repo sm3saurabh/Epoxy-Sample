@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    
+    <data>
+        <variable
+            name="elf"
+            type="com.epoxysample.domains.Elf" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:id="@+id/elf_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:contentDescription="@string/image_of_elf"
+            android:scaleType="fitCenter"
+            android:src="@drawable/elf"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/elf_name_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@{ @string/elf_name(elf.name) }"
+            app:layout_constraintTop_toBottomOf="@id/elf_image_view"
+            />
+
+        <TextView
+            android:id="@+id/elf_age_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@{ @string/age(elf.age) }"
+            app:layout_constraintTop_toBottomOf="@id/elf_name_view"
+            />
+
+        <TextView
+            android:id="@+id/elf_bmi_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@{ @string/bmi(elf.bmi) }"
+            app:layout_constraintTop_toBottomOf="@id/elf_age_view"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+</layout>
